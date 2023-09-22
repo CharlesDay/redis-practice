@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target({ ElementType.TYPE, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(DisableOnMacCondition.class)
+@ExtendWith(DisableOnWindowsCondition.class)
 public @interface DisableOnWindows {
 }
