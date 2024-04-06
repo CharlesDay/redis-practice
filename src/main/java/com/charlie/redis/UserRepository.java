@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+
 @Repository
 @RequiredArgsConstructor
 public class UserRepository {
@@ -22,7 +23,7 @@ public class UserRepository {
     }
 
     public void saveAll(Set<User> userSet) {
-        for (User user: userSet) {
+        for (User user : userSet) {
             save(user);
         }
     }
